@@ -17,7 +17,7 @@ function Home() {
         </p>
 
         <a
-          href="/DiljotSingh_Resume.pdf"
+          href="/Diljot Singh Resume.pdf"
           target="_blank"
           rel="noopener noreferrer"
         >
