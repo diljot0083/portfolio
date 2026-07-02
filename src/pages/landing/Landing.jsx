@@ -4,6 +4,7 @@ import Navbar from '../../components/navbar/Navbar';
 import Typing from '../../components/typing/Typing';
 import Editor from '../../components/editor/Editor';
 import Powered from '../../components/powered/Powered';
+import Reveal from '../../components/reveal/Reveal'
 
 const Landing = () => {
   return (
@@ -63,7 +64,9 @@ const Landing = () => {
 
         {/* Editor Section */}
         <div className="order-1 md:order-2 mb-7 md:mb-0">
-          <Editor />
+          <Reveal delay={200}>
+            <Editor />
+          </Reveal>
         </div>
       </div>
 

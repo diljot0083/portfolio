@@ -3,8 +3,22 @@
 :root {
     --bg-primary: #ffffff;
     --text-primary: #141414;
+    --text-secondary: #52525b;
+    --card-bg: #F3E8FF;
+    --card-border: #e4d4fb;
+    --accent: #7c3aed;
+    --accent-secondary: #db2777;
     --nav-bg: rgba(255, 255, 255, 0.75);
     --nav-border: rgba(20, 20, 20, 0.08);
+    --shadow-color: rgba(76, 29, 149, 0.15);
+    --btn-bg: #000000;
+    --btn-text: #ffffff;
+    --btn-secondary-bg: #1f2937;
+    --btn-secondary-text: #ffffff;
+    --badge-hover-bg: #e4d4fb;
+    --editor-text: #1E293B;
+    --success: #15803d;
+    --error: #b91c1c;
     --aurora-1: #c084fc;
     --aurora-2: #93c5fd;
     --aurora-3: #f9a8d4;
@@ -13,8 +27,22 @@
 [data-theme='dark'] {
     --bg-primary: #100e1a;
     --text-primary: #f4f2fa;
+    --text-secondary: #b3aec4;
+    --card-bg: #211d33;
+    --card-border: #362f4d;
+    --accent: #a78bfa;
+    --accent-secondary: #f472b6;
     --nav-bg: rgba(16, 14, 26, 0.7);
     --nav-border: rgba(255, 255, 255, 0.08);
+    --shadow-color: rgba(0, 0, 0, 0.55);
+    --btn-bg: #f4f2fa;
+    --btn-text: #100e1a;
+    --btn-secondary-bg: #362f4d;
+    --btn-secondary-text: #f4f2fa;
+    --badge-hover-bg: #362f4d;
+    --editor-text: #e4e0f5;
+    --success: #4ade80;
+    --error: #f87171;
     --aurora-1: #7c3aed;
     --aurora-2: #2563eb;
     --aurora-3: #db2777;
@@ -28,6 +56,13 @@ body {
     background-color: var(--bg-primary);
     color: var(--text-primary);
     transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+.gradient-text {
+    background: linear-gradient(90deg, var(--accent), var(--accent-secondary));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
 
 .aurora-blob {
@@ -103,6 +138,36 @@ body {
     }
 }
 
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.editor-float {
+    animation: float 4s ease-in-out infinite;
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ============ 3D Tilt Card ============ */
 .tilt-card {
     transition: transform 0.2s ease-out;
     transform-style: preserve-3d;
@@ -147,4 +212,24 @@ body {
 .nav-link:hover::after,
 .nav-link.active-nav-link::after {
     width: 100%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .aurora-blob {
+        animation: none;
+    }
+
+    .reveal {
+        transition: none;
+        opacity: 1;
+        transform: none;
+    }
+
+    .editor-float {
+        animation: none;
+    }
+
+    html {
+        scroll-behavior: auto;
+    }
 }

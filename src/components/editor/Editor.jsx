@@ -4,8 +4,7 @@ import Typing from '../typing/Typing';
 const Editor = () => {
   return (
     <div
-      className="w-[90vw] max-w-[500px] h-[320px] md:w-[570px] md:h-[320px] md:mr-20 mt-7 px-5 py-5 bg-[#F3E8FF] font-mono text-[#1E293B] shadow-2xl box-border rounded-xl"
-      style={{ animation: 'float 2s ease-in-out infinite' }}
+      className="editor-float w-[90vw] max-w-[500px] h-[320px] md:w-[570px] md:h-[320px] md:mr-20 mt-7 px-5 py-5 bg-[var(--card-bg)] font-mono text-[var(--editor-text)] shadow-2xl box-border rounded-xl border border-[var(--card-border)] transition-colors duration-300"
     >
       <div className="whitespace-pre-wrap text-xs md:text-sm leading-relaxed break-words">
         <Typing
@@ -22,16 +21,6 @@ int main() {
 }`}
         />
       </div>
-
-      <style>
-        {`
-        @keyframes float {
-          0%   { transform: translateY(0); }
-          50%  { transform: translateY(-20px); }
-          100% { transform: translateY(0); }
-        }
-      `}
-      </style>
     </div>
   );
 };
