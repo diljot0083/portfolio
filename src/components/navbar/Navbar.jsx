@@ -19,7 +19,7 @@ function Navbar() {
         </div>
 
         <div className="flex items-center gap-5">
-          <ul className="flex flex-wrap gap-6 text-md font-semibold overflow-hidden text-[var(--text-primary)]">
+          <ul className="flex flex-wrap gap-6 text-md font-semibold text-[var(--text-primary)]">
             <li>
               <NavLink to="/home" className={linkClass}>
                 Home
