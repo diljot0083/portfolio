@@ -4,7 +4,7 @@ import Reveal from '../../components/reveal/Reveal';
 import { Code2, Layout, Server, Database, Wrench } from 'lucide-react';
 
 const skillGroups = [
-  { label: "Languages", icon: Code2, items: ["C", "C++", "Python", "JavaScript", "TypeScript"] },
+  { label: "Languages", icon: Code2, items: ["C++", "Python", "JavaScript", "TypeScript"] },
   { label: "Frontend", icon: Layout, items: ["HTML", "CSS", "React", "Tailwind CSS"] },
   { label: "Backend", icon: Server, items: ["Node.js", "Express.js"] },
   { label: "Databases", icon: Database, items: ["MongoDB", "MySQL"] },

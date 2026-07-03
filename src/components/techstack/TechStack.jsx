@@ -12,14 +12,14 @@ import {
 } from 'react-icons/si';
 
 const techs = [
+    { name: 'C++', icon: SiCplusplus, color: '#4A9FD8' },
+    { name: 'JavaScript', icon: SiJavascript, color: '#F0DB4F' },
+    { name: 'TypeScript', icon: SiTypescript, color: '#3178C6' },
+    { name: 'MongoDB', icon: SiMongodb, color: '#47A248' },
+    { name: 'Express', icon: SiExpress, color: 'currentColor' },
     { name: 'React', icon: SiReact, color: '#61DAFB' },
     { name: 'Node.js', icon: SiNodedotjs, color: '#68A063' },
-    { name: 'Express', icon: SiExpress, color: 'currentColor' },
-    { name: 'MongoDB', icon: SiMongodb, color: '#47A248' },
-    { name: 'TypeScript', icon: SiTypescript, color: '#3178C6' },
     { name: 'Tailwind CSS', icon: SiTailwindcss, color: '#38BDF8' },
-    { name: 'JavaScript', icon: SiJavascript, color: '#F0DB4F' },
-    { name: 'C++', icon: SiCplusplus, color: '#4A9FD8' },
     { name: 'Git', icon: SiGit, color: '#F05032' },
 ];
 
