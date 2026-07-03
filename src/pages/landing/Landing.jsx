@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import Navbar from '../../components/navbar/Navbar';
 import Typing from '../../components/typing/Typing';
 import Editor from '../../components/editor/Editor';
-import Powered from '../../components/powered/Powered';
 import Reveal from '../../components/reveal/Reveal'
 
 const Landing = () => {
@@ -67,13 +66,6 @@ const Landing = () => {
           <Reveal delay={200}>
             <Editor />
           </Reveal>
-        </div>
-      </div>
-
-      <div className="px-6 md:px-12 md:py-5 pb-6">
-        <div className="flex flex-col gap-2" style={{ fontFamily: '"Times New Roman", Times, serif' }}>
-          <span className="text-lg font-medium">Hosted On – Vercel</span>
-          <Powered />
         </div>
       </div>
 

@@ -2,8 +2,7 @@ import React from 'react';
 import Typing from '../../components/typing/Typing';
 import Reveal from '../../components/reveal/Reveal';
 import TechStack from '../../components/techstack/TechStack';
-import GitHubLogo from '../../assets/github-mark.png';
-import LinkedInLogo from '../../assets/LinkedIn.png';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 function Home() {
   return (
@@ -29,29 +28,24 @@ function Home() {
             </button>
           </a>
 
-          <div className="flex flex-row gap-x-2 my-4">
-            <a href="https://github.com/diljot0083" target="_blank" rel="noopener noreferrer">
-              <img
-                src={GitHubLogo}
-                alt="GitHub Profile"
-                style={{ width: '41px', height: '41px', cursor: 'pointer' }}
-                className="transition-transform duration-300 hover:scale-110 hover:-translate-y-1"
+          <div className="flex flex-row items-center gap-x-4 my-4">
+            <a href="https://github.com/diljot0083" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <FaGithub
+                size={38}
+                className="text-[var(--text-primary)] transition-all duration-300 hover:scale-110 hover:-translate-y-1 hover:text-[var(--accent)]"
               />
             </a>
 
-            <a href="https://www.linkedin.com/in/diljotsingh0083" target="_blank" rel="noopener noreferrer">
-              <img
-                src={LinkedInLogo}
-                alt="LinkedIn Profile"
-                style={{ width: '39px', height: '38px', cursor: 'pointer' }}
-                className="transition-transform duration-300 hover:scale-110 hover:-translate-y-1"
+            <a href="https://www.linkedin.com/in/diljotsingh0083" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <FaLinkedin
+                size={38}
+                className="text-[var(--text-primary)] transition-all duration-300 hover:scale-110 hover:-translate-y-1 hover:text-[var(--accent)]"
               />
             </a>
           </div>
         </Reveal>
       </div>
 
-      {/* Right half — previously empty, now a tech showcase */}
       <div className="w-full md:w-1/2 px-6 md:px-12 pb-12 md:pb-0">
         <Reveal delay={200}>
           <p className="text-sm uppercase tracking-widest font-semibold mb-4 text-[var(--text-secondary)]">
