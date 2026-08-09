@@ -62,11 +62,11 @@ const Projects = () => {
                     </p>
 
                     <p className="mt-4 text-xl font-semibold">TechStack Used:</p>
-                    <p className="text-[var(--text-secondary)]">MongoDB, Express, React, Node, TypeScript, Tailwind CSS, JWT, OMDb API</p>
+                    <p className="text-[var(--text-secondary)]">MongoDB, Express, React, Node, TypeScript, Tailwind CSS, JWT, TMDB API</p>
 
                     <ul className="mt-4 list-disc pl-5 space-y-1 text-[var(--text-secondary)]">
                         <li>JWT + Google OAuth authentication system</li>
-                        <li>Movie search and data integration using OMDb API</li>
+                        <li>Movie search and data integration using TMDB API</li>
                         <li>Review and rating system with full CRUD operations</li>
                         <li>Responsive UI with clean component-based architecture</li>
                     </ul>
